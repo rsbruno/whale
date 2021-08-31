@@ -11,8 +11,13 @@
     --darkblue-80: #0E1647;
     --text-highlight: #DDE3F0;
     --text-textlight: #ABB1CC;
+    --text-text: #415161;
     --primary-red: #F70C22;
     --animations: 500ms
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .nav-mobile {
@@ -201,4 +206,50 @@
 .container-avatar img {
     border-radius: 50%;
     border: solid var(--primary-red) 2px;
+}
+
+.hero-two {
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-two>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-hero div>h2 {
+    font-family: "Rajdhani";
+    font-size: 2rem;
+    color: var(--primary-red);
+    text-align: center;
+    font-weight: 700;
+}
+
+.container-hero div h2::after {
+    content: "";
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+    height: 2px;
+    background: var(--darkblue-80);
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.hero-two .container-hero div>p {
+    font-family: "Inter";
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-text);
+}
+
+.technologies {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
