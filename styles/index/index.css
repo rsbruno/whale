@@ -298,3 +298,70 @@ body {
     display: block;
     transform: rotateZ(-5deg);
 }
+
+.hero-four {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--darkblue-100) 0%, var(--darkblue-80) 100%);
+    position: relative;
+}
+
+.hero-four::after {
+    content: " ";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.hero-four .container-hero {
+    z-index: 2;
+}
+
+.hobbie {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hobbie h4 {
+    font-family: "Inter";
+    text-transform: uppercase;
+    color: var(--text-textlight);
+    font-size: 1rem;
+}
+
+.hobbie h3 {
+    font-family: "Rajdhani";
+    font-weight: 700;
+    color: var(--primary-red);
+    margin-bottom: 22px;
+    font-size: 2.3rem;
+}
+
+.hobbie h3::before {
+    content: "";
+    display: block;
+    width: 27%;
+    height: 2px;
+    background: var(--text-highlight);
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+.hobbie p {
+    font-family: "Inter";
+    font-weight: 400;
+    color: var(--text-highlight);
+    font-size: 1rem;
+}

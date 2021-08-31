@@ -11,9 +11,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url("../../assets/avatar-hero-one.png");
+        background-position-x: right;
         width: 100%;
         height: 100%;
-        opacity: 0.04;
+        opacity: 0.1;
         z-index: 0;
     }
     .container-hero {
@@ -37,5 +38,16 @@
     }
     .mockups div:nth-child(2) {
         margin-top: 20px;
+    }
+    .hero-four {
+        height: 100vh;
+        background-position-x: right;
+    }
+    .hobbie {
+        width: 100%;
+        padding: 10%;
+    }
+    .hero-four::after {
+        opacity: .15;
     }
 }

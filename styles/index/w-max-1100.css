@@ -25,4 +25,11 @@
     .mockups div:nth-child(2) {
         margin-top: 20px;
     }
+    .mockups div img {
+        height: 50vh;
+    }
+    .hero-four {
+        height: 50vh;
+        background-position-x: right;
+    }
 }
