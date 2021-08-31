@@ -68,4 +68,7 @@
     .container-hero div h2::after {
         width: 50%;
     }
+    .mockups {
+        flex-direction: column;
+    }
 }

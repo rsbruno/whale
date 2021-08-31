@@ -26,4 +26,16 @@
         width: 0;
         display: none;
     }
+    .hero-three {
+        height: auto;
+    }
+    .mockups {
+        flex-direction: column;
+    }
+    .mockups div {
+        margin: 0 auto;
+    }
+    .mockups div:nth-child(2) {
+        margin-top: 20px;
+    }
 }
