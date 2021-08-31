@@ -253,3 +253,48 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.hero-three {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mockups {
+    display: flex;
+    flex-direction: row;
+}
+
+.mockups div img {
+    max-height: 100vh;
+}
+
+.mockups div:nth-child(2) {
+    margin: auto 0;
+}
+
+.mockups div:nth-child(2) p {
+    margin: 0 32px;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 300;
+    color: var(--text-text);
+}
+
+.mockups div:nth-child(2) h4 {
+    color: var(--primary-red);
+    text-align: center;
+    font-family: "Rajdhani";
+    font-size: 2rem;
+    margin-top: 22px;
+}
+
+.mockups div:nth-child(3) img {
+    display: block;
+    transform: rotateZ(6deg);
+}
+
+.mockups div:nth-child(1) img {
+    display: block;
+    transform: rotateZ(-5deg);
+}
