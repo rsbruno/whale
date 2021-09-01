@@ -50,4 +50,20 @@
     .hero-four::after {
         opacity: .15;
     }
+    .hero-footer .container-hero main {
+        flex-direction: column;
+    }
+    .hero-footer .container-hero main div {
+        width: 100%;
+    }
+    .hero-footer .container-hero main>div:first-child {
+        margin-bottom: 25px;
+    }
+    .signature {
+        margin-top: 17px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

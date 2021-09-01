@@ -4,6 +4,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: var(--primary-red) var(--darkblue-80);
+    /* scroll thumb and track */
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--darkblue-80);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-red);
+    border-radius: 6px;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--text-highlight);
+    background: var(--primary-red);
+    ;
+}
+
+ ::selection {
+    color: var(--text-highlight);
+    background: var(--primary-red);
+    ;
 }
 
 :root {
@@ -13,7 +43,9 @@
     --text-textlight: #ABB1CC;
     --text-text: #415161;
     --primary-red: #F70C22;
-    --animations: 500ms
+    --animations: 500ms;
+    --black-dark: #131313;
+    --black-light: #000000;
 }
 
 body {
@@ -364,4 +396,134 @@ body {
     font-weight: 400;
     color: var(--text-highlight);
     font-size: 1rem;
+}
+
+.hero-footer {
+    width: 100vw;
+    background: var(--black-dark);
+    padding: 22px 0;
+}
+
+.hero-footer .container-hero main {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-footer .container-hero main>div img {
+    border-radius: 6px;
+}
+
+.hero-footer .container-hero main>div h3 {
+    color: var(--text-highlight);
+    font-family: "Rajdhani";
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.hero-footer .container-hero main>div div .socials {
+    color: var(--text-textlight);
+    margin-right: 8px;
+}
+
+.hero-footer .container-hero main>div div a {
+    color: var(--text-highlight);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Rajdhani";
+}
+
+.hero-footer .container-hero main div {
+    width: 50%;
+}
+
+.hero-footer .container-hero main div form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-footer .container-hero main div form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero-footer .container-hero main div form label {
+    color: var(--text-highlight);
+    font-family: "Rajdhani";
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.hero-footer .container-hero main div form input {
+    border-radius: 4px;
+    font-size: .8rem;
+    height: 2rem;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    font-family: "Rajdhani";
+    font-weight: 600;
+    border: none;
+}
+
+.hero-footer .container-hero main div form input:focus {
+    outline: solid 2px var(--primary-red);
+}
+
+.hero-footer .container-hero main div form textarea {
+    height: 100px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    padding: 4px 8px;
+    font-family: "Rajdhani";
+    font-weight: 600;
+    border: none;
+}
+
+.hero-footer .container-hero main div form textarea:focus {
+    outline: solid 2px var(--primary-red);
+}
+
+.hero-footer .container-hero main div form button {
+    border-color: transparent;
+    max-width: 30%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: var(--primary-red);
+    color: var(--text-highlight);
+    text-transform: uppercase;
+    font-family: "Rajdhani";
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.hero-footer footer {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.hero-footer footer h5 {
+    font-family: "Rajdhani";
+    font-weight: 700;
+    color: var(--text-highlight);
+    font-size: 1.1rem;
+}
+
+.hero-footer footer h6 {
+    font-family: "Rajdhani";
+    font-weight: 500;
+    color: var(--text-textlight);
+    font-size: 1rem;
+}
+
+.signature {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.signature img {
+    height: 35px;
 }

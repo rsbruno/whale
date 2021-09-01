@@ -29,7 +29,19 @@
         height: 50vh;
     }
     .hero-four {
-        height: 50vh;
         background-position-x: right;
+    }
+    .hero-footer {
+        height: auto;
+        position: relative;
+    }
+    .hero-footer .container-hero main {
+        flex-direction: row;
+    }
+    .hero-footer .container-hero main div {
+        width: 50%;
+    }
+    .hero-footer .container-hero main>div:first-child {
+        margin-bottom: 25px;
     }
 }
