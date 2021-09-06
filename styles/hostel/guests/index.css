@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+}
+
+table tbody tr {
+    background: #d6d6d6;
+}
+
+table tbody tr:nth-child(2n) {
+    background: #aeaeae;
+}
+
+td {
+    padding: 12px 20px;
+}
+
+.dv-footer-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dv-wrapper-constrols {
+    display: flex;
+}
+
+.dv-wrapper-constrols button {
+    border: none;
+    background: transparent;
+    transition: ease 800ms;
+    cursor: pointer;
+}
+
+.constrols button {
+    border: none;
+    background: #ededed;
+    padding: 4px 17px;
+    margin-left: 4px;
+    transition: ease 800ms;
+    cursor: pointer;
+}
+
+.is-actived {
+    background: #aeaeae !important;
+}
